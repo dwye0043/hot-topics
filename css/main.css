@@ -1,0 +1,604 @@
+/* Import Icons from font-awesome and Fonts from googleaplis */
+@import url(../font-awesome/css/font-awesome.min.css);
+@import url('https://fonts.googleapis.com/css?family=Bitter|Roboto');
+
+/* 
+ * Design for Mobile, Tablet, Desktop 
+ *
+ * Colors:
+ *      Dark Blue:      #180e6e
+ *      Light Blue:     #1280fd
+ *      Light Purple:   #53097B
+ */
+
+
+/*=========================================================================*/
+/* 
+ * RESET
+ * http://meyerweb.com/eric/tools/css/reset/ 
+ * v2.0 | 20110126
+ * License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*=========================================================================*/
+/* 
+ * CLEARFIX
+ */
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+
+/*=========================================================================*/
+/*
+ * General
+ */
+
+* {
+    box-sizing: border-box;
+}
+
+body {	
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: .618rem;
+    line-height: 1.4;
+	color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Bitter", "Times New Roman", serif;
+    font-weight: bold;
+}
+
+h1 {
+    display: inline;
+    font-size: 1.6rem;
+    text-shadow: 0 2px 2px #180e6e;
+}
+
+h2 {
+    display: inline;
+    font-size: 1.1rem;
+    color: #53097B;
+    padding-bottom: 5px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+/*=========================================================================*/
+/* 
+ * Header
+ */
+
+/* 
+ * Header - Navigation Bar
+ */
+
+.hd-navbar ul {
+    margin: 0;
+	padding: 0;
+}
+
+.hd-navbar ul li a {
+	display: block;
+	padding: 1rem;
+    color: #1280fd;
+    font-weight: bold;
+    font-size: .8rem;
+    text-decoration: none;
+    border: 1px solid #1280fd;
+}
+
+.hd-navbar ul li a:hover,
+.hd-navbar ul li a:active {
+	color: #fff;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+
+/*=============================*/
+/* 
+ * Header - Masthead
+ */
+
+.masthead-bg {
+    background-color: black;
+    background-image: url(../img/market.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 200px;
+}
+
+.mh-title {
+    padding-top: 80px;
+}
+
+
+/*=========================================================================*/
+/* 
+ * Main
+ */
+
+/* wrapper applies to entire page*/
+.wrapper {
+    margin: 0;
+	padding: 0;
+    background-color: #180e6e;    
+}
+
+/* content-box applies to all content */
+.box {
+    text-align: center;
+}
+
+.main-bg {
+    background-color: #fff;
+    color: #000;
+    margin: 12px;
+    padding: 10px;
+}
+
+.main-bg p {
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.main-bg img {
+    border: 1px solid #53097B;
+    margin-bottom: 10px;
+}
+
+/* main content */
+article {
+    padding-bottom: 10px;
+}
+
+.gmo-list {
+    padding-left: 16px;
+    padding-bottom: 10px;
+}
+
+.gmo-list li {
+    list-style: disc;
+    text-align: left;
+}
+
+/* Feedback */
+
+.feedback {
+    text-align: left;
+}
+
+/* 
+ * Form
+ */
+
+form {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-box {
+    padding-top: 20px;
+}
+
+form label {
+    color: #53097B;
+}
+
+input[type="text"], 
+input[type="email"] {
+    width: 100%;
+    padding: 10px 5px;
+}
+
+textarea {
+    height: 100px;
+    width: 100%;
+    padding: 10px 5px;
+}
+
+input[type="submit"] {
+    background-color: #53097B;
+    color: #1280fd;
+    font-weight: bold;
+	width: 100%;
+    padding: 20px 0;
+    margin-top: 40px;
+    border: 2px solid #1280fd;
+}
+
+input[type="submit"]:hover {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+/*=========================================================================*/
+/* 
+ * Footer
+ */
+
+footer {
+    padding: 20px;
+}
+
+/*
+ * Social Media
+ */
+
+.social-media {
+    padding-bottom: 30px;
+}
+
+footer li {
+    display: inline;
+}
+
+footer li a {
+    color: #1280fd;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: .8rem;
+    text-decoration: none;
+    border: 1px solid #1280fd;
+}
+
+footer li a:hover {
+    color: #fff;
+}
+
+/*
+ * Company Logo & Name
+ */
+
+.ft-company-info {
+    padding-bottom: 10px;
+}
+
+footer h5 {
+    font-size: .8rem;
+}
+
+/*
+ * Company Address
+ */
+
+.ft-adrs {
+    padding-bottom: 10px;
+}
+
+/*
+ * Copyright
+ */
+.ft-cpr {
+    font-size: .5rem;    
+}
+
+
+/*=========================================================================*/
+/* 
+ * Media Query - TABLET ============================================---
+ */
+
+@media screen and (min-width: 35rem) and (max-width: 80rem) {
+    
+    /* font-size has to be 1rem for this viewport */
+    body {	
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    h2 {
+        font-size: 1.4rem;
+    }
+ 
+    /* Header */
+    .hd-top {
+        padding-bottom: 20px;
+    }
+    
+    .hd-company-info img {
+        width: 425px;
+        height: 200px;
+    }
+        
+    
+    /* Primary Navigation - full width, 1 row */
+    .hd-navbar {
+        padding: 0 5%;
+    }
+    
+    .hd-navbar li {
+        width: 50%;
+        float: left;
+    }
+    
+    .hd-navbar li a {
+        font-size: 1.2rem;
+    }
+    
+    
+    /* Masthead */
+    .masthead-bg {
+        min-height: 300px;
+    }
+    
+    .mh-title {
+        padding-top: 130px;    
+    }
+    
+    
+    /* Main */
+    .main-bg {
+        padding: 20px;
+    }
+    
+    .main-bg img {
+        width: 40%;
+        float: left;
+        margin: 8px 16px 8px 0;
+    }
+    
+    .gmo-list {
+        padding-left: 20px;
+    }
+    
+        
+    /* Form */
+    .form-box {
+        padding-top: 10px;
+    }
+    
+    .set1 {
+        width: 40%;
+        float: left;
+    }
+    
+    .set2 {
+        width: 58%;
+        float: right;
+    }
+    
+    textarea {
+        height: 185px;
+    }
+
+    .form-btn {
+    	width: 40%;
+    }
+    
+    
+    /* Feedback */
+    .feedback {
+        padding-top: 10px;
+    }
+    
+    
+    /* Footer */
+    footer h5 {
+        font-size: 1.2rem;
+    }
+    
+    .ft-cpr {
+        font-size: .8rem;    
+    }
+}
+
+
+/* 
+ * Media Query - DESKTOP ------------------------------------------------
+ */
+
+@media screen and (min-width: 80rem) {
+    
+    /* font-size has to be 1.618rem for this viewport */
+    body {	
+        font-size: 1.618rem;
+        line-height: 1.6;
+    }
+    
+    h1 {
+        font-size: 3rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    /* Entire content is aligned left (.box) */
+    .box {
+        text-align: left;
+        padding: 0 10%;
+    }
+    
+    
+    /* Header */
+    .hd-top {
+        height: 200px;
+    }
+    
+    .hd-company-info {
+        display: inline-block;
+        vertical-align: middle;
+        height: 200px;
+    }
+    
+    .hd-company-info img {
+        width: 425px;
+        height: 200px;
+    }
+    
+        
+     /* Primary Navigation - full width, aligned with Logo */
+    
+    .hd-navbar {
+        display: inline-block;
+        vertical-align: middle;
+        width: 500px;
+    }
+    
+    .hd-navbar li {
+        width: 48%;
+        float: left;
+        text-align: center;
+        margin-right: 10px;
+    }
+    
+    .hd-navbar li a {
+        font-size: 2rem;
+    }
+    
+    
+    /* Masthead */
+    .masthead-bg {
+        min-height: 400px;
+    }
+    
+    .mh-title {
+        padding-top: 150px;    
+    }
+    
+    
+    /* Main */
+    .main-bg img {
+        width: 400px;
+        height: 400px;
+        max-height: 100%;
+        float: left;
+        margin: 8px 20px 8px 0;
+    }
+    
+    .float-l {
+        width: 48%;
+        float: left;
+    }
+    
+    .float-r {
+        width: 48%;
+        float: right;
+    }
+    
+    .gmo-list {
+        padding-left: 26px;
+    }
+    
+    
+    /* Form */
+    .form-box {
+        padding-top: 10px;
+    }
+    
+    .set1 {
+        width: 40%;
+        float: left;
+    }
+    
+    .set2 {
+        width: 58%;
+        float: right;
+    }
+    
+    textarea {
+        height: 185px;
+    }
+
+    .form-btn {
+    	width: 40%;
+    }
+    
+    
+    /* Feedback */
+    .feedback {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    
+    
+    /* Footer */
+    .social-media {
+        display: inline-block;
+        vertical-align: top;
+        padding-right: 50px;
+    }
+    
+    .ft-company {
+        display: inline-block;
+    }
+    
+    footer h5 {
+        font-size: 1.8rem;
+    }
+    
+    .ft-cpr {
+        font-size: 1.2rem;    
+    }
+    
+}
