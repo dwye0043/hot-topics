@@ -567,7 +567,8 @@ footer h5 {
     }
     
     textarea {
-        height: 185px;
+        height: 230px;
+        margin-top: 6px;
     }
 
     .form-btn {
